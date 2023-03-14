@@ -291,9 +291,7 @@ class FiltroDeEventos(ttk.Frame):
         self.__trvwResultados.grid(column=0,row=0)
         self.__frameResultados.grid(column=0,row=3,columnspan=3)
     
-    def __buscar(self, archivo=list(iterable)):
-        for evento in archivo:
-            self.__trvwResultados.insert('',tk.END,values=(evento.values()))
+    def __buscar(self, archivo):
         pass
 
     def __filtrarPorTitulo(self):
